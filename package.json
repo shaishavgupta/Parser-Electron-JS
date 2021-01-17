@@ -1,0 +1,22 @@
+{
+  "name": "python-app-with-electron-gui",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+    },
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-packager": "^14.2.1"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "install": "^0.13.0",
+    "ipc": "0.0.1",
+    "python-shell": "^1.0.8",
+    "swal": "^0.1.0",
+    "sweetalert": "^2.1.2"
+  }
+}

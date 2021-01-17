@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="choose_file_connector.js"></script>
+
+</head>
+<body>
+    <form id="form" onsubmit="return false">
+        <input type="file" id="real-folder" hidden="hidden" webkitdirectory mozdirectory/>
+        <button type="button" id="custom-button2" onclick="upload_folder()">CHOOSE A FOLDER</button><br>
+        <span id="folder-name">No folder uploaded</span><br>
+        <span id="file_number">No files found</span><br>
+        <input type="radio" name="type" id="default" onclick="options(2)" checked>
+        <label>Single file</label><br>
+        <input type="radio" name="type" onclick="options(1)" id="range">
+        <label>select range</label><br>
+        <div style="display: none;" id="range_values">
+            <label>from:</label>
+            <input type="number" id="from" min="1">
+            <label>to</label>
+            <input type="number" id="to"><br>
+        </div>
+        <input type="radio" name="type"  onclick="options(0)" id="all">
+        <label>All</label><br>
+        <input type="submit" id="submit">
+    </form>
+    <script>
+        function options(x){
+            if(x==1)
+            document.getElementById("range_values").style.display="block";
+            else
+            document.getElementById("range_values").style.display="none";
+
+        }
+    </script>
+</body>
+</html>

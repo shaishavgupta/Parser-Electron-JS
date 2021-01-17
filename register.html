@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register User</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<script src="register_connector.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+		<div class="login-content">
+			<form onsubmit="return false">
+				<img src="img/avatar.svg">
+				<h2 class="title">Register</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div>
+           		   		<h5>Set Username</h5>
+           		   		<input type="text" class="input"  id="new_username">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div>
+           		    	<h5>Set Password</h5>
+           		    	<input type="password" class="input"  id="new_password">
+            	   </div>
+            	</div>
+            
+                <div class="input-div one">
+                    <div class="i">
+                            <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                            <h5>Your Thaver Tech ID</h5>
+                            <input type="text" class="input" id="thaver_id">
+                    </div>
+                </div>
+
+                <a href="gui.html">Login</a>
+            	<input type="submit" class="btn" value="Register" onclick="register_user()">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="focus.js"></script>
+</body>
+</html>

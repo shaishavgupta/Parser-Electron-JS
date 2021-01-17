@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="project_selection.js"></script>
+</head>
+<body>
+    <form onsubmit="return false">
+        <input type="radio" name="project_selection" onclick="display(0)" id="old_projects">
+        <label>load old projects</label><br>
+        <input type="radio" name="project_selection" onclick="display(1)" id="new_projects">
+        <label>create new project</label><br>
+        <div id="new_project" style="display: none;">
+            <label>Enter project name :&nbsp;</label>
+            <input type="text" id="project_name">
+        </div><br>
+        <input type="submit" value="Done" id="submit" onclick="my_project()">
+        <input type="submit" value="Logout" id="logout" onclick="goback()">
+    </form>
+</body>
+</html>

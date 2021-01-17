@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register User</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="choose_file_connector.js"></script>
+    <style> 
+       /* .div2
+        {
+            width: 300px;
+            border: 100px solid #00d699;
+         } */
+         #custom-button1 {
+            padding: 15px;
+            color: white;
+            background-color:#00d699;
+            border: 1px solid #000;
+            border-radius: 9px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            margin-left: 20px;
+            }
+
+            #custom-button2 {
+            padding: 15px;
+            color: white;
+            background-color:#00d699;
+            border: 1px solid #000;
+            border-radius: 9px;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-left: 25px;
+            margin-bottom: 15px;
+
+            }
+
+            #custom-button:hover {
+            background-color: #00b28f;
+            }
+            #custom-text1, #custom-text2 {
+            margin-left: 10px;
+            font-family: sans-serif;
+            color: #aaa;
+            margin-left: 15px;
+            }
+
+    </style>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+		<div class="login-content">
+            <form>
+                <!-- <input value="Upload folder" type="file" webkitdirectory mozdirectory class="btn" />
+                <input value="Upload xml files" type="file" accept="text/xml" class="btn" />
+                <input type="submit"> -->
+                <input type="file" id="real-file" hidden="hidden" accept="text/xml" />
+                <button type="button" id="custom-button1" onclick="upload_file()">CHOOSE A FILE</button><br>
+                <span id="custom-text1" style="margin-left: 10px;">No file chosen</span><br>
+                <input type="file" id="real-folder" hidden="hidden" webkitdirectory mozdirectory/>
+                <button type="button" id="custom-button2" onclick="load_folder()">CHOOSE A FOLDER</button><br>
+                <!-- <span id="custom-text2">No folder chosen</span><br> -->
+            </form>
+        </div>
+    </div>
+    <script>
+        function load_folder()
+        {
+            window.location = "upload_folder.html";
+        }
+    </script>
+    <script type="text/javascript" src="focus.js"></script>
+</body>
+</html>
