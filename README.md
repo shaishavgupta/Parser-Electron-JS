@@ -1,5 +1,5 @@
 # Parser-Electron-JS
-This code was a part of the complete software.
+This code was a part of the complete software that was created by the team.
 An end to end electron js desktop application with backend in node and processing in python.
 Node js and python are connected using the pyhton shell.
 Only the registered user can use the application which are stored in database.
